@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 70%;
+  background-color: rgb(243, 229, 216);
+  font-family: outfit;
+  letter-spacing: 0.5px;
+  font-family:sans-serif;
+  font-size: larger;
+}
+
+h1{
+  margin: 10px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 30px 0 10px 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.main-body {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  width: 80%;
+  margin: 5vh;
+  padding: 30px;
+  max-width: 300%;
+  position: relative;
+  left: 25%;
+  border-radius: 20px;
+}
+@media (min-width: 660px) {
+  .main-body {
+    align-items: left;
+  }
+}
+
+h2 {
+  color: rgb(119, 70, 55);
+  margin: 10px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+img {
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.preptime-box {
+  background-color: rgb(255, 247, 252);
+  padding: 1.5%;
+}
+.preptime-box h4 {
+  color: rgb(118, 43, 73);
+}
+
+.ordered-list {
+    list-style: none; counter-reset: li;
+    padding: auto;
+    letter-spacing: 1px;
+}
+
+.ordered-list-item::before {
+    content: counter(li); color: rgb(118, 43, 73);
+    display: inline-block; width: 1em;
+    margin-left: -1em;
+}
+
+    .ordered-list-item {
+        counter-increment: li;
+        padding: auto;
+    }
+li {
+  list-style: none;
+  padding: 10px 0 10px 0;
+}
+li:before {
+  /* For a round bullet */
+  content: "\2022";
+  /* For a square bullet */
+  /* content:'\25A0'; */
+  display: block;
+  position: relative;
+  max-width: 0;
+  max-height: 0;
+  left: -10px;
+  top: 0;
+  color: rgb(118, 43, 73);
+  font-size: 20px;
+}
+hr {
+  margin: 10px;
+}
+table{
+  margin: 10px;
+  font-size: larger;
+}
+tr{
+  padding: 10px;
+  margin-top: 10px;
+}
+td{
+  padding-top: 10px;
+  padding-right: 15vw;
+  font-weight: 100;
+  
+  
+}
+.hr3{
+  position: relative;
+  top: 7.5vh;
+  margin-bottom: 10px;
+}
+.hr2{
+  position: relative;
+  top: 14vh;
+  margin-bottom: 10px;
+}
+.hr1{
+  position: relative;
+  top: 21vh;
+  margin-bottom: 10px;
+}
+#secondtd{
+  color: rgb(119, 70, 55);
+}
